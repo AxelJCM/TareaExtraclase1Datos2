@@ -79,17 +79,47 @@ CMakeFiles/TareaExtraclase1Datos2.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TareaExtraclase1Datos2.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/axeljcm/CLionProjects/TareaExtraclase1Datos2/main.cpp -o CMakeFiles/TareaExtraclase1Datos2.dir/main.cpp.s
 
+CMakeFiles/TareaExtraclase1Datos2.dir/PagedArray/PagedArray.cpp.o: CMakeFiles/TareaExtraclase1Datos2.dir/flags.make
+CMakeFiles/TareaExtraclase1Datos2.dir/PagedArray/PagedArray.cpp.o: ../PagedArray/PagedArray.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/axeljcm/CLionProjects/TareaExtraclase1Datos2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TareaExtraclase1Datos2.dir/PagedArray/PagedArray.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TareaExtraclase1Datos2.dir/PagedArray/PagedArray.cpp.o -c /home/axeljcm/CLionProjects/TareaExtraclase1Datos2/PagedArray/PagedArray.cpp
+
+CMakeFiles/TareaExtraclase1Datos2.dir/PagedArray/PagedArray.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TareaExtraclase1Datos2.dir/PagedArray/PagedArray.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/axeljcm/CLionProjects/TareaExtraclase1Datos2/PagedArray/PagedArray.cpp > CMakeFiles/TareaExtraclase1Datos2.dir/PagedArray/PagedArray.cpp.i
+
+CMakeFiles/TareaExtraclase1Datos2.dir/PagedArray/PagedArray.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TareaExtraclase1Datos2.dir/PagedArray/PagedArray.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/axeljcm/CLionProjects/TareaExtraclase1Datos2/PagedArray/PagedArray.cpp -o CMakeFiles/TareaExtraclase1Datos2.dir/PagedArray/PagedArray.cpp.s
+
+CMakeFiles/TareaExtraclase1Datos2.dir/QuickSort/QuickSort.cpp.o: CMakeFiles/TareaExtraclase1Datos2.dir/flags.make
+CMakeFiles/TareaExtraclase1Datos2.dir/QuickSort/QuickSort.cpp.o: ../QuickSort/QuickSort.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/axeljcm/CLionProjects/TareaExtraclase1Datos2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TareaExtraclase1Datos2.dir/QuickSort/QuickSort.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TareaExtraclase1Datos2.dir/QuickSort/QuickSort.cpp.o -c /home/axeljcm/CLionProjects/TareaExtraclase1Datos2/QuickSort/QuickSort.cpp
+
+CMakeFiles/TareaExtraclase1Datos2.dir/QuickSort/QuickSort.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TareaExtraclase1Datos2.dir/QuickSort/QuickSort.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/axeljcm/CLionProjects/TareaExtraclase1Datos2/QuickSort/QuickSort.cpp > CMakeFiles/TareaExtraclase1Datos2.dir/QuickSort/QuickSort.cpp.i
+
+CMakeFiles/TareaExtraclase1Datos2.dir/QuickSort/QuickSort.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TareaExtraclase1Datos2.dir/QuickSort/QuickSort.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/axeljcm/CLionProjects/TareaExtraclase1Datos2/QuickSort/QuickSort.cpp -o CMakeFiles/TareaExtraclase1Datos2.dir/QuickSort/QuickSort.cpp.s
+
 # Object files for target TareaExtraclase1Datos2
 TareaExtraclase1Datos2_OBJECTS = \
-"CMakeFiles/TareaExtraclase1Datos2.dir/main.cpp.o"
+"CMakeFiles/TareaExtraclase1Datos2.dir/main.cpp.o" \
+"CMakeFiles/TareaExtraclase1Datos2.dir/PagedArray/PagedArray.cpp.o" \
+"CMakeFiles/TareaExtraclase1Datos2.dir/QuickSort/QuickSort.cpp.o"
 
 # External object files for target TareaExtraclase1Datos2
 TareaExtraclase1Datos2_EXTERNAL_OBJECTS =
 
 TareaExtraclase1Datos2: CMakeFiles/TareaExtraclase1Datos2.dir/main.cpp.o
+TareaExtraclase1Datos2: CMakeFiles/TareaExtraclase1Datos2.dir/PagedArray/PagedArray.cpp.o
+TareaExtraclase1Datos2: CMakeFiles/TareaExtraclase1Datos2.dir/QuickSort/QuickSort.cpp.o
 TareaExtraclase1Datos2: CMakeFiles/TareaExtraclase1Datos2.dir/build.make
 TareaExtraclase1Datos2: CMakeFiles/TareaExtraclase1Datos2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/axeljcm/CLionProjects/TareaExtraclase1Datos2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable TareaExtraclase1Datos2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/axeljcm/CLionProjects/TareaExtraclase1Datos2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable TareaExtraclase1Datos2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TareaExtraclase1Datos2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,0 +1,14 @@
+//
+// Created by axeljcm on 8/19/21.
+//
+
+#ifndef TAREAEXTRACLASE1DATOS2_PAGEDARRAY_H
+#define TAREAEXTRACLASE1DATOS2_PAGEDARRAY_H
+
+
+class PagedArray {
+
+};
+
+
+#endif //TAREAEXTRACLASE1DATOS2_PAGEDARRAY_H

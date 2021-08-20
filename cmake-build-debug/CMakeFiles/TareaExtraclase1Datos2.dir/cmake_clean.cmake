@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/TareaExtraclase1Datos2.dir/PagedArray/PagedArray.cpp.o"
+  "CMakeFiles/TareaExtraclase1Datos2.dir/QuickSort/QuickSort.cpp.o"
   "CMakeFiles/TareaExtraclase1Datos2.dir/main.cpp.o"
   "TareaExtraclase1Datos2"
   "TareaExtraclase1Datos2.pdb"

@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/axeljcm/CLionProjects/TareaExtraclase1Datos2/main.cpp
+iostream
+-
+fstream
+-
+vector
+-
+sstream
+-
+map
+-
+

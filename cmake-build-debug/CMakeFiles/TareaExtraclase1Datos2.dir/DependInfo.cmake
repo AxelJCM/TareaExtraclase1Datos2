@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/axeljcm/CLionProjects/TareaExtraclase1Datos2/PagedArray/PagedArray.cpp" "/home/axeljcm/CLionProjects/TareaExtraclase1Datos2/cmake-build-debug/CMakeFiles/TareaExtraclase1Datos2.dir/PagedArray/PagedArray.cpp.o"
+  "/home/axeljcm/CLionProjects/TareaExtraclase1Datos2/QuickSort/QuickSort.cpp" "/home/axeljcm/CLionProjects/TareaExtraclase1Datos2/cmake-build-debug/CMakeFiles/TareaExtraclase1Datos2.dir/QuickSort/QuickSort.cpp.o"
   "/home/axeljcm/CLionProjects/TareaExtraclase1Datos2/main.cpp" "/home/axeljcm/CLionProjects/TareaExtraclase1Datos2/cmake-build-debug/CMakeFiles/TareaExtraclase1Datos2.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

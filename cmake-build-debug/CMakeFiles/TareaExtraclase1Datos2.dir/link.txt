@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/TareaExtraclase1Datos2.dir/main.cpp.o -o TareaExtraclase1Datos2 
+/usr/bin/c++ -g CMakeFiles/TareaExtraclase1Datos2.dir/main.cpp.o CMakeFiles/TareaExtraclase1Datos2.dir/PagedArray/PagedArray.cpp.o CMakeFiles/TareaExtraclase1Datos2.dir/QuickSort/QuickSort.cpp.o -o TareaExtraclase1Datos2 

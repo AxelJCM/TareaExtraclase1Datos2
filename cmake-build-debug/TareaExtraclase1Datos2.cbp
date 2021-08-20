@@ -82,6 +82,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/axeljcm/CLionProjects/TareaExtraclase1Datos2/PagedArray/PagedArray.cpp">
+			<Option target="TareaExtraclase1Datos2"/>
+		</Unit>
+		<Unit filename="/home/axeljcm/CLionProjects/TareaExtraclase1Datos2/PagedArray/PagedArray.h">
+			<Option target="TareaExtraclase1Datos2"/>
+		</Unit>
+		<Unit filename="/home/axeljcm/CLionProjects/TareaExtraclase1Datos2/QuickSort/QuickSort.cpp">
+			<Option target="TareaExtraclase1Datos2"/>
+		</Unit>
+		<Unit filename="/home/axeljcm/CLionProjects/TareaExtraclase1Datos2/QuickSort/QuickSort.h">
+			<Option target="TareaExtraclase1Datos2"/>
+		</Unit>
 		<Unit filename="/home/axeljcm/CLionProjects/TareaExtraclase1Datos2/main.cpp">
 			<Option target="TareaExtraclase1Datos2"/>
 		</Unit>

@@ -129,6 +129,54 @@ TareaExtraclase1Datos2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TareaExtraclase1Datos2.dir/build.make CMakeFiles/TareaExtraclase1Datos2.dir/build
 .PHONY : TareaExtraclase1Datos2/fast
 
+PagedArray/PagedArray.o: PagedArray/PagedArray.cpp.o
+.PHONY : PagedArray/PagedArray.o
+
+# target to build an object file
+PagedArray/PagedArray.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TareaExtraclase1Datos2.dir/build.make CMakeFiles/TareaExtraclase1Datos2.dir/PagedArray/PagedArray.cpp.o
+.PHONY : PagedArray/PagedArray.cpp.o
+
+PagedArray/PagedArray.i: PagedArray/PagedArray.cpp.i
+.PHONY : PagedArray/PagedArray.i
+
+# target to preprocess a source file
+PagedArray/PagedArray.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TareaExtraclase1Datos2.dir/build.make CMakeFiles/TareaExtraclase1Datos2.dir/PagedArray/PagedArray.cpp.i
+.PHONY : PagedArray/PagedArray.cpp.i
+
+PagedArray/PagedArray.s: PagedArray/PagedArray.cpp.s
+.PHONY : PagedArray/PagedArray.s
+
+# target to generate assembly for a file
+PagedArray/PagedArray.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TareaExtraclase1Datos2.dir/build.make CMakeFiles/TareaExtraclase1Datos2.dir/PagedArray/PagedArray.cpp.s
+.PHONY : PagedArray/PagedArray.cpp.s
+
+QuickSort/QuickSort.o: QuickSort/QuickSort.cpp.o
+.PHONY : QuickSort/QuickSort.o
+
+# target to build an object file
+QuickSort/QuickSort.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TareaExtraclase1Datos2.dir/build.make CMakeFiles/TareaExtraclase1Datos2.dir/QuickSort/QuickSort.cpp.o
+.PHONY : QuickSort/QuickSort.cpp.o
+
+QuickSort/QuickSort.i: QuickSort/QuickSort.cpp.i
+.PHONY : QuickSort/QuickSort.i
+
+# target to preprocess a source file
+QuickSort/QuickSort.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TareaExtraclase1Datos2.dir/build.make CMakeFiles/TareaExtraclase1Datos2.dir/QuickSort/QuickSort.cpp.i
+.PHONY : QuickSort/QuickSort.cpp.i
+
+QuickSort/QuickSort.s: QuickSort/QuickSort.cpp.s
+.PHONY : QuickSort/QuickSort.s
+
+# target to generate assembly for a file
+QuickSort/QuickSort.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TareaExtraclase1Datos2.dir/build.make CMakeFiles/TareaExtraclase1Datos2.dir/QuickSort/QuickSort.cpp.s
+.PHONY : QuickSort/QuickSort.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +210,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... TareaExtraclase1Datos2"
+	@echo "... PagedArray/PagedArray.o"
+	@echo "... PagedArray/PagedArray.i"
+	@echo "... PagedArray/PagedArray.s"
+	@echo "... QuickSort/QuickSort.o"
+	@echo "... QuickSort/QuickSort.i"
+	@echo "... QuickSort/QuickSort.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
