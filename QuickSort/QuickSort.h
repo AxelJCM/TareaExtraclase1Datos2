@@ -7,7 +7,14 @@
 
 
 class QuickSort {
+public:
+    QuickSort();
+    void startQuickSort(int array[], int l, int r);
 
+private:
+    int partition(int array[], int l, int r);
+    void swap(int array[],int i, int j);
+    void printArray(int array[], int size);
 };
 
 

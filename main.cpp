@@ -36,6 +36,7 @@ int main()
     istringstream sstream(file_contents);
     std::vector<string> items;
     string record;
+    int array[1536];
 
     int counter = 0;
     while (std::getline(sstream, record)) {
@@ -43,11 +44,19 @@ int main()
         while (std::getline(line, record, delimiter)) {
             record.erase(std::remove_if(record.begin(), record.end(), isspace), record.end());
             items.push_back(record);
+            //cout << record << endl;
+            array[counter]= std::stoi(record);
+            counter += 1;
         }
 
         csv_contents[counter] = items;
         items.clear();
-        counter += 1;
+
+
+    }
+    for (int i = 0; i < counter; ++i) {
+
+        cout << array[i] << endl;
     }
 
     exit(EXIT_SUCCESS);
