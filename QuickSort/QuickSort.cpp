@@ -3,6 +3,9 @@
 //
 
 #include "QuickSort.h"
+#include "iostream"
+
+using namespace std;
 
 void QuickSort::swap(int array[], int i, int j) {
     int temp = array[i];
@@ -36,10 +39,10 @@ void QuickSort::startQuickSort(int array[], int l, int r) {
     }
 }
 
-void QuickSort::printArray(int array[], int size) {
+void QuickSort::saveArray(int array[], int size) {
     int i;
     for (i=0; i<size; i++)
-        cout <<
-    printf("\n");
+        cout << array[i] << endl;
+
 
 }

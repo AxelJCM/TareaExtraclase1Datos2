@@ -7,7 +7,10 @@
 
 
 class PagedArray {
-
+public:
+    PagedArray();
+    int writeResult(int array);
+private:
 };
 
 

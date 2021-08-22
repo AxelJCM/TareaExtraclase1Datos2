@@ -3,9 +3,12 @@
 
 CMakeFiles/TareaExtraclase1Datos2.dir/PagedArray/PagedArray.cpp.o: \
  ../PagedArray/PagedArray.cpp \
- ../PagedArray/PagedArray.h
+ ../PagedArray/PagedArray.h \
+ ../QuickSort/QuickSort.h
 CMakeFiles/TareaExtraclase1Datos2.dir/QuickSort/QuickSort.cpp.o: \
  ../QuickSort/QuickSort.cpp \
  ../QuickSort/QuickSort.h
 CMakeFiles/TareaExtraclase1Datos2.dir/main.cpp.o: \
+ ../PagedArray/PagedArray.h \
+ ../QuickSort/QuickSort.h \
  ../main.cpp

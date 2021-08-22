@@ -6,9 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/axeljcm/CLionProjects/TareaExtraclase1Datos2/QuickSort/QuickSort.cpp
-QuickSort.h
+/home/axeljcm/CLionProjects/TareaExtraclase1Datos2/PagedArray/PagedArray.cpp
+../QuickSort/QuickSort.h
 /home/axeljcm/CLionProjects/TareaExtraclase1Datos2/QuickSort/QuickSort.h
+PagedArray.h
+/home/axeljcm/CLionProjects/TareaExtraclase1Datos2/PagedArray/PagedArray.h
+iostream
+-
+fstream
+-
+
+/home/axeljcm/CLionProjects/TareaExtraclase1Datos2/PagedArray/PagedArray.h
 
 /home/axeljcm/CLionProjects/TareaExtraclase1Datos2/QuickSort/QuickSort.h
 
@@ -23,4 +31,8 @@ sstream
 -
 map
 -
+QuickSort/QuickSort.h
+/home/axeljcm/CLionProjects/TareaExtraclase1Datos2/QuickSort/QuickSort.h
+PagedArray/PagedArray.h
+/home/axeljcm/CLionProjects/TareaExtraclase1Datos2/PagedArray/PagedArray.h
 

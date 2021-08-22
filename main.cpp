@@ -6,6 +6,8 @@
 #include <vector>
 #include <sstream>
 #include <map>
+#include "QuickSort/QuickSort.h"
+#include "PagedArray/PagedArray.h"
 
 using std::cout; using std::cerr;
 using std::endl; using std::string;
@@ -54,15 +56,23 @@ int main()
 
 
     }
-    for (int i = 0; i < counter; ++i) {
+    //for (int i = 0; i < counter; ++i) {
 
-        cout << array[i] << endl;
-    }
-
-    exit(EXIT_SUCCESS);
+    //cout << array[i] << endl;
 
 
+    //exit(EXIT_SUCCESS);
+    PagedArray result;
+    result.writeResult();
 
+
+    //resultPage.
+    QuickSort page;
+
+    page.startQuickSort(array,0,counter-1);
+    page.saveArray(array,counter);
+
+}
 
 
     //void read_record()
@@ -82,4 +92,3 @@ int main()
        // cout << line << endl;
 
 
-    }
