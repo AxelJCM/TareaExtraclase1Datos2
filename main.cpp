@@ -6,14 +6,21 @@
 #include <vector>
 #include <sstream>
 #include <map>
-#include "QuickSort/QuickSort.h"
 #include "PagedArray/PagedArray.h"
+#include <string>
 
 using std::cout; using std::cerr;
 using std::endl; using std::string;
 using std::ifstream; using std::ostringstream;
 using std::istringstream;
+using std::cin;
 
+//using namespace std;
+/**
+ *
+ * @param path
+ * @return
+ */
 string readFileIntoString(const string& path) {
     auto ss = ostringstream{};
     ifstream input_file(path);
@@ -25,15 +32,36 @@ string readFileIntoString(const string& path) {
     ss << input_file.rdbuf();
     return ss.str();
 }
-
+/**
+ *
+ * @return
+ */
 int main()
 {
-    string filename("nums.csv");
+    string comando;
+    cout << "Insertar Comando: ";
+    getline(cin,comando);
+    std::size_t pos = comando.find('-i');
+    std::size_t pos2 = comando.find(">");
+    int pos3 = pos2-pos;
+    std::string fileName = comando.substr(pos+3,pos3-3);
+
+
+    /**
+     * Encontrar posiciones y cortar para el archivo resultado
+     */
+    std::size_t pos4 = comando.find_last_of('-');
+    std::size_t pos5 = comando.find_last_of('>');
+    //cout << pos4 << endl;
+    //cout << pos5 << endl;
+    //cout << comando.size()  << endl;
+    std::string resultPage = comando.substr(pos4+4,(pos5-pos4)-4);
+    //cout << resultPage;
     string file_contents;
     std::map<int, std::vector<string>> csv_contents;
     char delimiter = ',';
 
-    file_contents = readFileIntoString(filename);
+    file_contents = readFileIntoString(fileName);
 
     istringstream sstream(file_contents);
     std::vector<string> items;
@@ -41,12 +69,14 @@ int main()
     int array[1536];
 
     int counter = 0;
+    /*
+     *
+     */
     while (std::getline(sstream, record)) {
         istringstream line(record);
         while (std::getline(line, record, delimiter)) {
             record.erase(std::remove_if(record.begin(), record.end(), isspace), record.end());
             items.push_back(record);
-            //cout << record << endl;
             array[counter]= std::stoi(record);
             counter += 1;
         }
@@ -56,39 +86,13 @@ int main()
 
 
     }
-    //for (int i = 0; i < counter; ++i) {
-
-    //cout << array[i] << endl;
-
-
-    //exit(EXIT_SUCCESS);
-    PagedArray result;
-    result.writeResult();
+    /**
+     *
+     */
+    PagedArray *result = new PagedArray(array,resultPage,counter);
+    result->writeResult(array,resultPage);
 
 
-    //resultPage.
-    QuickSort page;
 
-    page.startQuickSort(array,0,counter-1);
-    page.saveArray(array,counter);
 
 }
-
-
-    //void read_record()
-    //{
-
-    // File pointer
-    //fstream fin;
-
-    // Open an existing file
-    //fin.open("nums.csv", ios::in);
-
-
-    // Read the Data from the file
-    //while(fin.good()){
-        //string line;
-       // getline(fin,line,',');
-       // cout << line << endl;
-
-

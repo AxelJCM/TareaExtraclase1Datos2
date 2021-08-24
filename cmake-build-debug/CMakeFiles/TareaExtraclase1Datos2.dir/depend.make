@@ -10,5 +10,4 @@ CMakeFiles/TareaExtraclase1Datos2.dir/QuickSort/QuickSort.cpp.o: \
  ../QuickSort/QuickSort.h
 CMakeFiles/TareaExtraclase1Datos2.dir/main.cpp.o: \
  ../PagedArray/PagedArray.h \
- ../QuickSort/QuickSort.h \
  ../main.cpp
