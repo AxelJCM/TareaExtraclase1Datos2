@@ -6,23 +6,19 @@
 
 #IncludeRegexTransform: 
 
+/home/axeljcm/CLionProjects/TareaExtraclase1Datos2/PagedArray/PagedArray.cpp
+../QuickSort/QuickSort.h
+/home/axeljcm/CLionProjects/TareaExtraclase1Datos2/QuickSort/QuickSort.h
+PagedArray.h
 /home/axeljcm/CLionProjects/TareaExtraclase1Datos2/PagedArray/PagedArray.h
-string
--
-
-/home/axeljcm/CLionProjects/TareaExtraclase1Datos2/main.cpp
 iostream
 -
 fstream
 -
-vector
--
-sstream
--
-map
--
-PagedArray/PagedArray.h
+
 /home/axeljcm/CLionProjects/TareaExtraclase1Datos2/PagedArray/PagedArray.h
 string
 -
+
+/home/axeljcm/CLionProjects/TareaExtraclase1Datos2/QuickSort/QuickSort.h
 

@@ -11,7 +11,7 @@
 class PagedArray {
 public:
     PagedArray(int array[], std::string resultPage, int counter);
-    int writeResult(int array[], std::string resultPage);
+    static void writeResult(int array[], std::string resultPage, int counter);
 private:
 
 

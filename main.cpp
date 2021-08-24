@@ -17,9 +17,9 @@ using std::cin;
 
 //using namespace std;
 /**
- *
+ *readFileIntoString(): Se lee el archivo y saca el contenido y lo convierte en string.
  * @param path
- * @return
+ * @return ss = contenido
  */
 string readFileIntoString(const string& path) {
     auto ss = ostringstream{};
@@ -33,11 +33,14 @@ string readFileIntoString(const string& path) {
     return ss.str();
 }
 /**
- *
- * @return
+ *main(): Main del programa donde se ejecuta
+ * @return ejecucion de programa
  */
 int main()
 {
+    /**
+     * Busca posiciones y cortar para el archivo
+     */
     string comando;
     cout << "Insertar Comando: ";
     getline(cin,comando);
@@ -52,11 +55,7 @@ int main()
      */
     std::size_t pos4 = comando.find_last_of('-');
     std::size_t pos5 = comando.find_last_of('>');
-    //cout << pos4 << endl;
-    //cout << pos5 << endl;
-    //cout << comando.size()  << endl;
     std::string resultPage = comando.substr(pos4+4,(pos5-pos4)-4);
-    //cout << resultPage;
     string file_contents;
     std::map<int, std::vector<string>> csv_contents;
     char delimiter = ',';
@@ -70,7 +69,7 @@ int main()
 
     int counter = 0;
     /*
-     *
+     *while que lee y guarda en un array el contenido del archivo
      */
     while (std::getline(sstream, record)) {
         istringstream line(record);
@@ -90,7 +89,7 @@ int main()
      *
      */
     PagedArray *result = new PagedArray(array,resultPage,counter);
-    result->writeResult(array,resultPage);
+    result->writeResult(array,resultPage,counter);
 
 
 

@@ -11,7 +11,7 @@ using std::fstream;
 //
 
 /**
- *
+ *Constructor de Paged Array: Llama a metodos de quicksort
  * @param array
  * @param resultPage
  * @param counter
@@ -25,30 +25,38 @@ PagedArray::PagedArray(int array[],string resultPage, int counter) {
 }
 
 /**
- *
+ *writeResult(): Guarda datos ordenados en archivo resultado
  * @param array
  * @param resultPage
- * @return
+ * @return resultPage con numeros ordenados
  */
-int PagedArray::writeResult(int array[], string resultPage) {
-    fstream outfile;
-    outfile.open(resultPage, std::ios_base::out);
-    string arrayStr;
+//int PagedArray::writeResult(int array[], string resultPage) {
+    //fstream outfile;
+    //outfile.open(resultPage, std::ios_base::out);
+    //string arrayStr;
+    //cout << sizeof(array);
+    //for (int i = 0; i < sizeof(array) ; ++i) {
+        //arrayStr = array[i] ;
 
-    for (int i = 0; i < 1536 ; ++i) {
-        array[i] = std::stoi(arrayStr);
+       // cout<<arrayStr;
+  //  }
+   // if (!outfile.is_open()) {
+     //   cout << "failed to open " << resultPage << '\n';
+   // } else {
+      //  outfile.write(arrayStr.data(), arrayStr.size());
+       // cout << "Done Writing!" << endl;
+       // std::fill_n(array, sizeof(array), 0);
+   // }
 
-        cout<<arrayStr;
+   // return EXIT_SUCCESS;
+//}
+void PagedArray::writeResult(int array[], string resultPage, int counter) {
+    std::ofstream file;
+    file.open(resultPage,std::ios_base::app);
+    for (int i = 0; i < counter ; i++) {
+        file << array[i] << ",";
     }
-        if (!outfile.is_open()) {
-            cout << "failed to open " << resultPage << '\n';
-        } else {
-            outfile.write(arrayStr.data(), arrayStr.size());
-            cout << "Done Writing!" << endl;
-            std::fill_n(array, 1536, 0);
-        }
+    file.close();
+    std::fill_n(array, counter, 0);
 
-        return EXIT_SUCCESS;
-
-    }
-
+}
