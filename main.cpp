@@ -16,11 +16,13 @@ using std::istringstream;
 using std::cin;
 
 //using namespace std;
+
 /**
  *readFileIntoString(): Se lee el archivo y saca el contenido y lo convierte en string.
  * @param path
  * @return ss = contenido
  */
+
 string readFileIntoString(const string& path) {
     auto ss = ostringstream{};
     ifstream input_file(path);
@@ -36,18 +38,17 @@ string readFileIntoString(const string& path) {
  *main(): Main del programa donde se ejecuta
  * @return ejecucion de programa
  */
-int main()
-{
+int main() {
     /**
      * Busca posiciones y cortar para el archivo
      */
     string comando;
     cout << "Insertar Comando: ";
-    getline(cin,comando);
+    getline(cin, comando);
     std::size_t pos = comando.find('-i');
     std::size_t pos2 = comando.find(">");
-    int pos3 = pos2-pos;
-    std::string fileName = comando.substr(pos+3,pos3-3);
+    int pos3 = pos2 - pos;
+    std::string fileName = comando.substr(pos + 3, pos3 - 3);
 
 
     /**
@@ -55,7 +56,7 @@ int main()
      */
     std::size_t pos4 = comando.find_last_of('-');
     std::size_t pos5 = comando.find_last_of('>');
-    std::string resultPage = comando.substr(pos4+4,(pos5-pos4)-4);
+    std::string resultPage = comando.substr(pos4 + 4, (pos5 - pos4) - 4);
     string file_contents;
     std::map<int, std::vector<string>> csv_contents;
     char delimiter = ',';
@@ -68,7 +69,7 @@ int main()
     int array[1536];
 
     int counter = 0;
-    /*
+    /**
      *while que lee y guarda en un array el contenido del archivo
      */
     while (std::getline(sstream, record)) {
@@ -76,22 +77,26 @@ int main()
         while (std::getline(line, record, delimiter)) {
             record.erase(std::remove_if(record.begin(), record.end(), isspace), record.end());
             items.push_back(record);
-            array[counter]= std::stoi(record);
+            array[counter] = std::stoi(record);//meter aqui operador
+            //arrayOg[counter] = std::stoi(record);
+            cout << counter << endl;
             counter += 1;
         }
 
         csv_contents[counter] = items;
         items.clear();
 
-
     }
     /**
      *
      */
-    PagedArray *result = new PagedArray(array,resultPage,counter);
-    result->writeResult(array,resultPage,counter);
+    //void loopReadArray(int counter,int arrayOg(int counter));{
+    // if counter
 
-
-
-
+    //}
+    /**
+     *Llama metodos de otras clases
+     */
+    PagedArray *result = new PagedArray(array, counter);
+    result->writeResult(array, resultPage, counter);
 }

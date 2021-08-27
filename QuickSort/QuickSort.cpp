@@ -7,7 +7,7 @@
 
 using namespace std;
 /**
- *
+ *Metodo swap(): swapea arrays para ordenar mediante QuickSort
  * @param array
  * @param i
  * @param j
@@ -17,12 +17,14 @@ void QuickSort::swap(int array[], int i, int j) {
     array[i] = array[j];
     array[j] = temp;
 }
-
+/**
+ * Constructor QuickSort
+ */
 QuickSort::QuickSort() {
 
 }
 /**
- *
+ *partition(): Metodo de ordenar por partes el array.
  * @param array
  * @param l
  * @param r
@@ -42,7 +44,7 @@ int QuickSort::partition(int array[], int l, int r) {
     return i + 1;
 }
 /**
- *
+ *startQuickSort(): Empieza el ordenamiento de quicksort
  * @param array
  * @param l
  * @param r
@@ -55,7 +57,7 @@ void QuickSort::startQuickSort(int array[], int l, int r) {
     }
 }
 /**
- *
+ *saveArray(): Imprime el array sorteado.
  * @param array
  * @param size
  */

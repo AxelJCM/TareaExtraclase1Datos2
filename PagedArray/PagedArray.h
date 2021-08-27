@@ -8,10 +8,19 @@
 
 #include <string>
 
+
 class PagedArray {
 public:
-    PagedArray(int array[], std::string resultPage, int counter);
-    static void writeResult(int array[], std::string resultPage, int counter);
+    //!Constructor PagedArray()
+    //! \param array
+    //! \param counter
+    PagedArray(int array[], int counter);
+    //! Metodo writeResult(): Guarda el array ordenado al archivo resultado
+    //! \param array
+    //! \param resultPage
+    //! \param counter
+    void writeResult(int array[], std::string resultPage, int counter);
+    //PagedArray[] operator[](int array[], int counter);
 private:
 
 
